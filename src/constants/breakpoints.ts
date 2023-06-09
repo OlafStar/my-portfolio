@@ -38,7 +38,7 @@ export const breakpoints: BreakpointsType = {
     phone: 546,
     tablet: 768,
     laptop: 1088,
-    desktop: 1400,
+    desktop: 1440,
     wideDesktop: 1700,
 };
 
