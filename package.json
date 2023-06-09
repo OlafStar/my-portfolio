@@ -9,14 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/styled-components": "^5.1.26",
+    "framer-motion": "^10.12.16",
+    "next": "13.4.4",
+    "next-i18next": "^13.3.0",
+    "next-transpile-modules": "^10.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-use": "^17.4.0",
+    "styled-components": "^6.0.0-rc.3"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.0.1",
     "@types/node": "20.2.5",
     "@types/react": "18.2.9",
     "@types/react-dom": "18.2.4",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
-    "next": "13.4.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
     "typescript": "5.1.3"
   }
 }
