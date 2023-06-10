@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import {motion} from 'framer-motion';
 import {styled} from 'styled-components';
 import {above} from '~constants/breakpoints';
 
@@ -18,7 +18,6 @@ export const AboutTextContainer = styled.div`
     font-family: 'Arial';
     font-size: 64px;
     line-height: 100%;
-    -webkit-text-stroke: 1px white;
 
     ${above.desktop} {
         font-size: clamp(4rem, -1.4217rem + 6.0241vw, 14rem);
@@ -36,5 +35,14 @@ export const Mask = styled(motion.div)`
 `;
 
 export const TextLines = styled.p`
+    -webkit-text-stroke: 1px rgba(255,255,255,0.2);
 
+`;
+
+export const WhiteTextLines = styled(motion.div)`
+    position: absolute;
+    inset: 0 0 0 0;
+    -webkit-text-stroke: 0px white;
+    color: white;
+    overflow: hidden;
 `;

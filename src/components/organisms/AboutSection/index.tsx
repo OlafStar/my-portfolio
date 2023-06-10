@@ -5,6 +5,7 @@ import {
     TextLines,
     LineRelativeContainer,
     Mask,
+    WhiteTextLines,
 } from './styles';
 import useScrollPosition from '~hooks/useScrollPosition';
 
@@ -56,14 +57,13 @@ const AboutSection = () => {
             <AboutTextContainer>
                 {textLines.map((text, index) => (
                     <LineRelativeContainer key={text}>
-                        <TextLines data-fill-text={text}>{text}</TextLines>
-                        <Mask
+                        <TextLines>{text}</TextLines>
+                        <WhiteTextLines
                             ref={(el) => (maskRefs.current[index] = el)}
-                            initial={{transform: 'translateX(-100%)'}}
-                            animate={{
-                                transform: `translateX(${progress[index] - 100}%)`,
-                            }}
-                        />
+                            animate={{width: `${progress[index]}%`}}
+                        >
+                            {text}
+                        </WhiteTextLines>
                     </LineRelativeContainer>
                 ))}
             </AboutTextContainer>
