@@ -61,6 +61,7 @@ const AboutSection = () => {
                         <WhiteTextLines
                             ref={(el) => (maskRefs.current[index] = el)}
                             animate={{width: `${progress[index]}%`}}
+                            transition={{ease: 'linear'}}
                         >
                             {text}
                         </WhiteTextLines>
